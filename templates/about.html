@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> 
   </head>
   <body>
     <h1>Jordan Campbell</h1>
@@ -13,5 +14,6 @@
       new ways to learn and grow, whether through projects, research, or
       collaboration.
     </p>
+    <img src="{{url_for('static', filename='images/random.jpg')}}">
   </body>
 </html>
